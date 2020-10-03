@@ -11,7 +11,8 @@ public class PhoneBook {
     }
 
     public static boolean checkName(String name) {
-        return true;
+        String[] fio = name.strip().split(" ");
+        return fio.length == 3;
     }
 
     public static String formatName(String name) {
